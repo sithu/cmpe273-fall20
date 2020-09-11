@@ -62,9 +62,16 @@ Return QR Code PNG image.
 
 The endpoint should return the number of request made to each bookmark and it should support conditional GET.
 
-200 OK
+_Request Header_
+ETag: version_num
 
-_Respond_
+
+_Response Header_
+
+200 OK
+ETag: version_num
+
+_Response Body_
 
 ```
 {
@@ -73,3 +80,9 @@ _Respond_
     ]
 }
 ```
+
+OR when the conditional GET applied, the response will not have a body.
+
+304 Not Modified
+ETag: version_num
+
