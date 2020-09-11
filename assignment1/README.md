@@ -28,12 +28,14 @@ _Response_
 
 ### GET /api/bookmarks/abc123
 
+```
 {
     "id": "abc123",
     "name": "Pinterest",
     "url": "https://www.pinterest.com/pin/27373510214883341/",
     "description": "Innovation Engine"
 }
+```
 
 ### GET /api/bookmarks/abc123/qrcode
 
