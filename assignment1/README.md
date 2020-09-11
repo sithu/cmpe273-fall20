@@ -58,7 +58,7 @@ Return QR Code PNG image.
 
 
 
-### GET /api/bookmarks/stats
+### GET /api/bookmarks/{id}/stats
 
 The endpoint should return the number of request made to each bookmark and it should support conditional GET.
 
@@ -73,11 +73,7 @@ ETag: version_num
 _Response Body_
 
 ```
-{
-    [
-        "abc123": 3
-    ]
-}
+3
 ```
 
 OR when the conditional GET applied in the subsequent calls, the response will not have a body.
