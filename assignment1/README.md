@@ -65,8 +65,10 @@ The endpoint should return the number of request made to each bookmark and it sh
 
 _Response Header_
 
+```
 200 OK
 ETag: version_num
+```
 
 _Response Body_
 
@@ -81,10 +83,14 @@ _Response Body_
 OR when the conditional GET applied in the subsequent calls, the response will not have a body.
 
 _Request Header_
+
+```
 ETag: version_num
+```
 
 _Response Header_
 
+```
 304 Not Modified
 ETag: version_num
-
+```
