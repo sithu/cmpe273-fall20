@@ -50,4 +50,15 @@ Return QR Code PNG image.
 
 
 
+### GET /api/bookmarks/stats
+
+The endpoint should return the number of request made to each bookmark and it should support conditional GET.
+
+200 OK
+
+_Respond_
+
+{
+    "abc123": 3
+}
 
