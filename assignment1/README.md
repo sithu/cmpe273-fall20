@@ -2,6 +2,14 @@
 
 You will be building a simple bookmarking application using [Python Flask](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). All the bookmark data will be stored into a local [sqlitedict](https://pypi.org/project/sqlitedict/) datastore.
 
+## Install Dependencies
+
+```
+pipenv install Flask==1.1.1
+pipenv install pillow qrcode
+pipenv install flask_monitoringdashboard
+```
+
 ## API
 
 ### POST /api/bookmarks
