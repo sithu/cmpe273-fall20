@@ -13,7 +13,7 @@ You will be building low-code/no-code HTTP client application that supports thes
 * Trigger OUTPUT event based on the logic.
 
 
-_Format_
+_Flow Syntax_
 
 ```yaml
 Step:
@@ -35,7 +35,7 @@ Step:
 
 Save the flow in _input.yaml_
 
-## How to execute Http Client flow
+## How to execute Flow Http Client
 
 ```
 python3 httpflow.py input.yaml
