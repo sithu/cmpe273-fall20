@@ -3,6 +3,7 @@
 ## Dependency
 
 - [Requests](https://requests.readthedocs.io/en/master/)
+- [Schedule](https://www.geeksforgeeks.org/python-schedule-library/)
 
 ## Requirements
 
@@ -11,6 +12,7 @@ You will be building low-code/no-code HTTP client application that supports thes
 * Outbound HTTP GET calls
 * Handle logic based on the response as INPUT.
 * Trigger OUTPUT event based on the logic.
+* Scheduler to execute the steps.
 
 
 ### Scheduler 'when' Format
