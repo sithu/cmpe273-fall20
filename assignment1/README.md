@@ -34,6 +34,20 @@ _Response_
 }
 ```
 
+If the POST url is already existed in the database, the POST API should return HTTP 400 error.
+
+_Response_
+
+400 Bad Request
+
+```
+{
+    "reason": "The given URL already existed in the system."
+}
+```
+
+
+
 ### GET /api/bookmarks/abc123
 
 ```
@@ -60,7 +74,7 @@ Return QR Code PNG image.
 
 ### GET /api/bookmarks/{id}/stats
 
-The endpoint should return the number of request made to each bookmark and it should support conditional GET.
+The endpoint should return the number of GET request made to each bookmark and it should support conditional GET.
 
 
 _Response Header_
