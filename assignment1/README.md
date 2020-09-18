@@ -59,6 +59,15 @@ _Response_
 }
 ```
 
+If the request bookmark id does not exist in the system, the API should return 
+
+
+_Response_
+
+```
+404 Not Found
+```
+
 ### GET /api/bookmarks/abc123/qrcode
 
 200 OK
