@@ -32,3 +32,21 @@ Step:
     action: print
     data: "Error"
 ```
+
+Save the flow in _input.yaml_
+
+## How to execute Http Client flow
+
+```
+python3 httpflow.py input.yaml
+```
+
+### Expected Output
+
+```
+Response body
+
+OR
+
+Error
+```
