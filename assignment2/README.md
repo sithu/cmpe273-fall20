@@ -3,7 +3,7 @@
 ## Dependency
 
 - [Requests](https://requests.readthedocs.io/en/master/)
-- [Schedule](https://stackabuse.com/scheduling-jobs-with-python-crontab/)
+- [Python-Crontab](https://stackabuse.com/scheduling-jobs-with-python-crontab/)
 
 ## Requirements
 
@@ -63,6 +63,8 @@ python3 httpflow.py input.yaml
 ```
 
 ### Expected Output
+
+Print the output in every five minutes.
 
 ```
 Response body
