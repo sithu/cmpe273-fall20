@@ -3,7 +3,7 @@
 ## Dependency
 
 - [Requests](https://requests.readthedocs.io/en/master/)
-- [Python-Crontab](https://stackabuse.com/scheduling-jobs-with-python-crontab/)
+- [Schedule](https://github.com/dbader/schedule)
 
 ## Requirements
 
