@@ -40,8 +40,8 @@ Step:
  condition:
   if: 
     equal:
-    left: http.response.code
-    right: 200
+      left: http.response.code
+      right: 200
   then:
     action: print
     data: http.response.body
