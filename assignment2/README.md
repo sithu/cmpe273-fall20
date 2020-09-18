@@ -13,6 +13,19 @@ You will be building low-code/no-code HTTP client application that supports thes
 * Trigger OUTPUT event based on the logic.
 
 
+### Scheduler 'when' Format
+
+| Field name    | Mandatory? | Allowed values  | Special characters |
+| ------------- | ---------- | --------------- | ------------------ |
+| Seconds       | No*        | 0-59            | * / , -            |
+| Minutes       | Yes        | 0-59            | * / , -            |
+| Hours         | Yes        | 0-23            | * / , -            |
+| Day of month  | Yes        | 1-31            | * / , - L W        |
+| Month         | Yes        | 1-12 or JAN-DEC | * / , -            |
+| Day of week   | Yes        | 0-6 or SUN-SAT  | * / , - L #        |
+| Year          | No*        | 1970–2099       | * / , -            |
+
+
 _Flow Syntax_
 
 ```yaml
@@ -31,6 +44,10 @@ Step:
   else:
     action: print
     data: "Error"
+    
+Scheduler:
+  when: "0/1 * 0 ? * * *"
+  step_id_to_execute: [ 1 ]
 ```
 
 Save the flow in _input.yaml_
