@@ -6,7 +6,7 @@
 
 ## Requirements
 
-You will be building no-code/no-code HTTP client application that supports these features:
+You will be building low-code/no-code HTTP client application that supports these features:
 
 * Outbound HTTP GET calls
 * Handle logic based on the response as INPUT.
