@@ -35,6 +35,7 @@ _Flow Syntax_
 ```yaml
 Step:
  id: 1
+ type: HTTP_CLIENT
  method: GET
  outbound_url: http://requestbin.com/
  condition:
