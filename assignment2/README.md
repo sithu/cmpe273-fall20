@@ -55,8 +55,8 @@ _Example_
 _Flow Syntax_
 
 ```yaml
-Step:
- id: 1
+Steps:
+ - 1
  type: HTTP_CLIENT
  method: GET
  outbound_url: http://requestbin.com/
