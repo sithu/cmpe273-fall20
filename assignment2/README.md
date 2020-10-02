@@ -32,7 +32,7 @@ You will be building low-code/no-code HTTP client application that supports thes
 
 _Example_
 
-'''
+```
 5 * * 
 # Executes at every 5 minutes
 
@@ -50,7 +50,7 @@ _Example_
 
 10 23 1 
 # Executes at 23:10 on every Monday
-'''
+```
 
 _Flow Syntax_
 
