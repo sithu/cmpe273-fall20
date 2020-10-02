@@ -56,21 +56,21 @@ _Flow Syntax_
 
 ```yaml
 Steps:
- - 1
- type: HTTP_CLIENT
- method: GET
- outbound_url: http://requestbin.com/
- condition:
-  if: 
-    equal:
-      left: http.response.code
-      right: 200
-  then:
-    action: ::print
-    data: http.response.body
-  else:
-    action: ::print
-    data: "Error"
+ - 1:
+    type: HTTP_CLIENT
+    method: GET
+    outbound_url: http://requestbin.com/
+    condition:
+      if: 
+        equal:
+          left: http.response.code
+          right: 200
+      then:
+        action: ::print
+        data: http.response.body
+      else:
+        action: ::print
+        data: "Error"
     
 Scheduler:
   when: "5 * *"
