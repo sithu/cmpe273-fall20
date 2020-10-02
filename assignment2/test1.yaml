@@ -9,14 +9,14 @@ Step:
       left: http.response.code
       right: 200
   then:
-    action: print
+    action: ::print
     data: http.response.headers.content-type
   else:
-    action: print
+    action: ::print
     data: "Error"
     
 Scheduler:
-  when: "1 * * * *"
+  when: "1 * *"
   step_id_to_execute: [ 1 ]
 
 

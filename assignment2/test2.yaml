@@ -12,7 +12,7 @@ Step:
     action: ::invoke:step:2
     data: 'https://api.github.com'
   else:
-    action: print
+    action: ::print
     data: "Error"
     
 Step:
@@ -26,14 +26,14 @@ Step:
       left: http.response.code
       right: 200
   then:
-    action: print
+    action: ::print
     data: http.response.headers.X-Ratelimit-Limit
   else:
-    action: print
+    action: ::print
     data: "Error"
   
 Scheduler:
-  when: "1 * * * *"
-  step_id_to_execute: [ 1 ]
+  when: "1 * 1"
+  step_id_to_execute: [ 1, 2, 1 ]
 
 
