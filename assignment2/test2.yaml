@@ -33,7 +33,7 @@ Steps:
         data: "Error"
   
 Scheduler:
-  when: "1 * 1"
-  step_id_to_execute: [ 1, 2, 1 ]
+  when: "2 * *"
+  step_id_to_execute: [ 1 ]
 
 
