@@ -21,7 +21,7 @@ def send_to_voting_workers():
 def receive_result():
     context = zmq.Context()
     receiver = context.socket(zmq.PULL)
-    receiver.bind("tcp://127.0.0.1:5000")
+    receiver.bind("tcp://127.0.0.1:3000")
     
     result_1 = receiver.recv_json()
     result_2 = receiver.recv_json()
