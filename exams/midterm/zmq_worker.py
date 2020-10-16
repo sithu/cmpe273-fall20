@@ -7,7 +7,7 @@ def voting_station_worker():
     receiver.connect("tcp://127.0.0.1:4000")
     
     result_sender = context.socket(zmq.PUSH)
-    result_sender.connect("tcp://127.0.0.1:5000")
+    result_sender.connect("tcp://127.0.0.1:3000")
     
     msg = receiver.recv_json()
     region = msg['region']
