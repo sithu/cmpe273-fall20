@@ -26,7 +26,7 @@ def voting_station_worker():
         }
     else:
         # FIXME
-        # Count votes from east.cvs
+        # Count votes from west.cvs
         print(f'Counting {region}...')
         # FIXME
         result = {
