@@ -14,33 +14,6 @@ You will be buliding a distributed key-value datastore using ZeroMQ as transport
 
 - Remove Node-0 
 
-## APIs
-
-POST /api/entries
-
-```
-{
-    "key": "foo",
-    "value": "bar"
-}
-```
-
-
-GET /api/entries
-
-```
-[
-    {
-        "key": "foo",
-        "value": "bar"
-    },
-    {
-        "key": "foo2",
-        "value": "bar2"
-    }
-]
-```
-
 ## Phase 1
 
 ### Consistent hashing
