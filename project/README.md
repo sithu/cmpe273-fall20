@@ -32,31 +32,10 @@ pipenv run python client_producer.py 4
 ```
 ## Phase 1
 
+The scope of phase 1 is to shard (PUT) the data into a list of servers. No retrieval is required.
+
 ### Consistent hashing
-
-#### Test Case 1
-
-R = 0
-
-Adding and removing one node.
-
-
-#### Test Case 2
-
-R = 2
-
-Adding and removing one node.
-
-
 
 
 ### HRW hashing
 
-#### Test Case 1
-
-- Adding and removing one node.
-
-
-#### Test Case 2
-
-- Adding and removing one node.
