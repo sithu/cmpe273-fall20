@@ -45,7 +45,7 @@ pipenv install -r requirements.txt
 ## To Test Your Code
 
 ```
-pipevn run python main.py
+pipenv run python main.py
 ```
 
 
